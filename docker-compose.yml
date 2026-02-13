@@ -1,0 +1,7 @@
+services:
+  video-processor:
+    build: .
+    volumes:
+      - ./videos:/app/videos
+    env_file:
+      - .env
